@@ -20,6 +20,9 @@ def look_only_one_column(col_list):
         elif '-' in tag:
             prefixs.add(tag.split('-')[0])
             labels.add(tag.split('-')[1])
+        elif '_' in tag:
+            prefixs.add(tag.split('_')[0])
+            labels.add(tag.split('_')[1])
         else:
             labels.add(tag)
     print('Prefix:', end=' ')
@@ -33,6 +36,7 @@ def main(args):
     if not os.path.exists(args.file_path):
         print('{} not exists!'.format(args.file_path))
         return
+    print('What is your label system {}'.format(args.file_path))    
     seps = [',', '\t', ' ']
     data = None
     for sep in seps:

@@ -13,4 +13,10 @@ python what_is_your_tag_system.py --file_path xxxx
 
 ## Result
 
+```shell
+./test.sh
+```
+
+
+
 ![](result.png)
