@@ -15,7 +15,8 @@ def look_only_one_column(col_list):
     labels = set()
     for tag in col_list[1:]:  # skip the first line
         tag = str(tag)
-        if tag == 'O' or tag == 'o':
+        if tag == 'O' or tag == 'o' or tag =='0':
+            prefixs.add('O')            
             labels.add('O')
         elif '-' in tag:
             prefixs.add(tag.split('-')[0])
@@ -36,7 +37,7 @@ def main(args):
     if not os.path.exists(args.file_path):
         print('{} not exists!'.format(args.file_path))
         return
-    print('What is your label system {}'.format(args.file_path))    
+    print('FILENAME = {}'.format(args.file_path))    
     seps = [',', '\t', ' ']
     data = None
     for sep in seps:

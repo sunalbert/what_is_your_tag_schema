@@ -13,10 +13,18 @@ python what_is_your_tag_system.py --file_path xxxx
 
 ## Result
 
+- what_is_your_tag_system.py
+
 ```shell
-./test.sh
+./test_what_is_your_tag_system.sh
 ```
 
+![](1.png)
 
+- sequence_tag_schema_converter.py
 
-![](result.png)
+  ```shell
+  python sequence_tag_schema_converter.py IOB2BIO input_iob_file output_bio_file
+  ```
+
+  ![](2.png)
