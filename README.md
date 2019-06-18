@@ -1,5 +1,7 @@
 # what_is_your_tag_schema
-A script for looking the label system of data for sequence tagging task such as NER, Chunking, POS et.
+- (1)The tag schema of data for sequence tagging task such as NER, Chunking, POS et.
+- (2)convert IOB, BIO, IOBES
+- (3)analyse conll data
 
 #### What is tag schema in sequence labeling tasks?
 
